@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+
+    <title>Spring Framework Guru</title>
+
+    <!--/*/ <th:block th:include="fragments/headerinc :: head"></th:block> /*/-->
+</head>
+<body>
+<div class="container">
+    <!--/*/ <th:block th:include="fragments/header :: header"></th:block> /*/-->
+    <div th:if="${not #lists.isEmpty(shinobis)}">
+        <h2>Product List</h2>
+        <table class="table table-striped">
+            <tr>
+                <th>Id</th>
+                <th>Nama</th>
+                <th>Level</th>
+                <th>Jutsu</th>
+                <th>Desa</th>
+                <th>View</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+            <tr th:each="shinobi : ${shinobis}">
+                <td th:text="${shinobi.id}"><a href="/shinobi/${shinobi.id}">Id</a></td>
+                <td th:text="${shinobi.id}">Shinobi Id</td>
+                <td th:text="${shinobi.nama}">Nama</td>
+                <td th:text="${shinobi.level}">price</td>
+                <td th:text="${shinobi.jutsu}">jutsu</td>
+                <td th:text="${shinobi.desa}">desa</td>
+                <td><a th:href="${'/shinobi/' + shinobi.id}">View</a></td>
+                <td><a th:href="${'/shinobi/edit/' + shinobi.id}">Edit</a></td>
+                <td><a th:href="${'/shinobi/delete/' + shinobi.id}">Delete</a></td>
+            </tr>
+        </table>
+
+    </div>
+</div>
+
+</body>
+</html>
