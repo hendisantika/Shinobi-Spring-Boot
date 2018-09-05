@@ -42,28 +42,28 @@ public class ShinobiLoader implements ApplicationListener<ContextRefreshedEvent>
         log.info("Saved Shinobi - id: " + shinobi.getId());
 
         Shinobi shinobi2 = new Shinobi();
-        shinobi.setNama("Uchiha Sasuke");
-        shinobi.setLevel("Rogue Ninja");
-        shinobi.setJutsu("Chidori");
-        shinobi.setDesa("Konohagakure");
+        shinobi2.setNama("Uchiha Sasuke");
+        shinobi2.setLevel("Rogue Ninja");
+        shinobi2.setJutsu("Chidori");
+        shinobi2.setDesa("Konohagakure");
         shinobiRepository.save(shinobi2);
 
         log.info("Saved Shinobi - id:" + shinobi2.getId());
         
         Shinobi shinobi3 = new Shinobi();
-        shinobi.setNama("Haruno Sakura");
-        shinobi.setLevel("Jounin");
-        shinobi.setJutsu("Sanaro");
-        shinobi.setDesa("Konohagakure");
+        shinobi3.setNama("Haruno Sakura");
+        shinobi3.setLevel("Jounin");
+        shinobi3.setJutsu("Sanaro");
+        shinobi3.setDesa("Konohagakure");
         shinobiRepository.save(shinobi3);
 
         log.info("Saved Shinobi - id:" + shinobi3.getId());
 
         Shinobi shinobi4 = new Shinobi();
-        shinobi.setNama("Hatake Kakashi");
-        shinobi.setLevel("Jounin");
-        shinobi.setJutsu("Raikiri");
-        shinobi.setDesa("Konohagakure");
+        shinobi4.setNama("Hatake Kakashi");
+        shinobi4.setLevel("Jounin");
+        shinobi4.setJutsu("Raikiri");
+        shinobi4.setDesa("Konohagakure");
         shinobiRepository.save(shinobi4);
 
         log.info("Saved Shinobi - id:" + shinobi4.getId());
