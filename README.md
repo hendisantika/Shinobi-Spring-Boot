@@ -14,7 +14,7 @@ List Page
 
 Add New Sninobi
 
-![Add New Page](img/new "Add New Page")
+![Add New Page](img/new.png "Add New Page")
 
 View Details Page
 
