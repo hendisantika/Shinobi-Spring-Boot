@@ -12,7 +12,7 @@ List Page
 
 ![List Page](img/list.png "List Page")
 
-Add New Sninobi
+Add New Sinobi
 
 ![Add New Page](img/new.png "Add New Page")
 
