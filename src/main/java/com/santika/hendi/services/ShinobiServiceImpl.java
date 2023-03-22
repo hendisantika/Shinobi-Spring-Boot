@@ -30,7 +30,7 @@ public class ShinobiServiceImpl implements ShinobiService{
 
     @Override
     public Shinobi getShinobiById(Integer id) {
-        return shinobiRepository.findOne(id);
+        return shinobiRepository.findById(id).get();
     }
 
     @Override
@@ -40,7 +40,7 @@ public class ShinobiServiceImpl implements ShinobiService{
 
     @Override
     public void deleteShinobi(Integer id) {
-        shinobiRepository.delete(id);
+        shinobiRepository.deleteById(id);
     }
     
     

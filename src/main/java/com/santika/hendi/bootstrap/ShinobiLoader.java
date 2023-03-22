@@ -7,11 +7,14 @@ package com.santika.hendi.bootstrap;
 
 import com.santika.hendi.domain.Shinobi;
 import com.santika.hendi.repositories.ShinobiRepository;
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.stereotype.Component;
+
+
 
 /**
  *
@@ -20,8 +23,8 @@ import org.springframework.stereotype.Component;
 @Component
 public class ShinobiLoader implements ApplicationListener<ContextRefreshedEvent>{
     private ShinobiRepository shinobiRepository;
-    
-    private Logger log = Logger.getLogger(ShinobiLoader.class);
+
+    private final Logger log = LoggerFactory.getLogger(ShinobiLoader.class);
 
     @Autowired
     public void setShinobiRepository(ShinobiRepository shinobiRepository) {
