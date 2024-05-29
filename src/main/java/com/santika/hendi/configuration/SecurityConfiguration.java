@@ -14,7 +14,7 @@ public class SecurityConfiguration {
         httpSecurity
                 .authorizeHttpRequests(authz -> authz
                         .requestMatchers("/webjars/**", "/css/**", "/js/**", "/images/**").permitAll()
-                        .requestMatchers("/").permitAll()
+                        .requestMatchers("/", "/shinobis", "/shinobis/**", "/shinobi/**").permitAll()
                         .requestMatchers("/h2/console/**").permitAll());
         httpSecurity.csrf(AbstractHttpConfigurer::disable);
         httpSecurity.headers().frameOptions().disable();
