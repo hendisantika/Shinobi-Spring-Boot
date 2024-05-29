@@ -40,9 +40,9 @@ public class ShinobiLoader implements ApplicationListener<ContextRefreshedEvent>
         shinobi.setJutsu("Rasengan");
         shinobi.setDesa("Konohagakure");
         shinobiRepository.save(shinobi);
-        
-                
-        log.info("Saved Shinobi - id: " + shinobi.getId());
+
+
+        log.info("Saved Shinobi - id: {}", shinobi.getId());
 
         Shinobi shinobi2 = new Shinobi();
         shinobi2.setNama("Uchiha Sasuke");
@@ -51,7 +51,7 @@ public class ShinobiLoader implements ApplicationListener<ContextRefreshedEvent>
         shinobi2.setDesa("Konohagakure");
         shinobiRepository.save(shinobi2);
 
-        log.info("Saved Shinobi - id:" + shinobi2.getId());
+        log.info("Saved Shinobi - id:{}", shinobi2.getId());
         
         Shinobi shinobi3 = new Shinobi();
         shinobi3.setNama("Haruno Sakura");
@@ -60,7 +60,7 @@ public class ShinobiLoader implements ApplicationListener<ContextRefreshedEvent>
         shinobi3.setDesa("Konohagakure");
         shinobiRepository.save(shinobi3);
 
-        log.info("Saved Shinobi - id:" + shinobi3.getId());
+        log.info("Saved Shinobi - id:{}", shinobi3.getId());
 
         Shinobi shinobi4 = new Shinobi();
         shinobi4.setNama("Hatake Kakashi");
@@ -69,7 +69,7 @@ public class ShinobiLoader implements ApplicationListener<ContextRefreshedEvent>
         shinobi4.setDesa("Konohagakure");
         shinobiRepository.save(shinobi4);
 
-        log.info("Saved Shinobi - id:" + shinobi4.getId());
+        log.info("Saved Shinobi - id:{}", shinobi4.getId());
     }
     
     
